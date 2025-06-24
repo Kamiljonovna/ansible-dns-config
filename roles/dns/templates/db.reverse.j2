@@ -1,0 +1,10 @@
+$TTL 86400
+@   IN  SOA ns1.{{ zone_name }}. admin.{{ zone_name }}. (
+            {{ zone_serial }}
+            3600
+            1800
+            604800
+            86400 )
+@       IN  NS      ns1.{{ zone_name }}.
+70      IN  PTR     ns1.{{ zone_name }}.
+100     IN  PTR     www.{{ zone_name }}.
