@@ -34,7 +34,7 @@
   notify: Restart named
 
 - name: Enable and start named service
-  ansible.builtin.service:
+  systemd:
     name: named
     enabled: yes
     state: started
